@@ -1,4 +1,4 @@
-/* cn-ex — paper full-bleed + mobile-first */
+/* 中国制霸 · China Experience — paper full-bleed + mobile-first */
 
 :root {
   --paper: #f0ebe3;
@@ -111,6 +111,10 @@ button,
   font-size: 1rem;
   font-weight: 650;
   letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.brand .tag {
+  white-space: nowrap;
 }
 
 .tag {

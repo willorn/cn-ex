@@ -2,7 +2,7 @@
   "name": "cn-ex",
   "version": "0.1.0",
   "private": true,
-  "description": "中国省级制霸标记工具（体验参考 JapanEx，状态用 ?l= 分享）",
+  "description": "中国制霸 · China Experience — 省级足迹标记（?l= 分享）",
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 5178",

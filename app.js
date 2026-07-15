@@ -1,5 +1,5 @@
 /**
- * cn-ex — China province level map
+ * 中国制霸 · China Experience
  * Experience inspired by JapanEx (https://zhung.com.tw/japanex/)
  * Share state via ?l= + localStorage fallback
  */
@@ -51,7 +51,7 @@ const MAP_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 976" 
     <text x="1000" y="684">路过 1</text>
     <text x="998" y="734">没去过</text>
   </g>
-  <text id="credit" x="37" y="937">cn-ex</text>
+  <text id="credit" x="37" y="937">中国制霸</text>
 </svg>`;
 
 const $ = (sel, root = document) => root.querySelector(sel);
