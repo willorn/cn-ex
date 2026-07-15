@@ -154,31 +154,31 @@ button,
 
 .map-host #title,
 .map-host #score {
-  font-size: 42px;
+  font-size: 54px;
   font-weight: 700;
-}
-.map-host #legend text {
-  font-size: 20px;
 }
 
 .map-host .fs24 {
   font-size: 24px;
 }
-.map-host .fs22 {
-  font-size: 18px;
+.map-host .fs24 {
+  font-size: 24px;
 }
 .map-host #labels text {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
   paint-order: stroke fill;
-  stroke: rgba(255, 255, 255, 0.75);
-  stroke-width: 3px;
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 2px;
+}
+.map-host #legend text {
+  font-size: 24px;
 }
 
 .map-host #regions path {
   fill: var(--lv-0);
   stroke: var(--stroke);
-  stroke-width: 1.6;
+  stroke-width: 4;
   stroke-linejoin: round;
   stroke-linecap: round;
   fill-rule: evenodd;
@@ -187,19 +187,15 @@ button,
   pointer-events: auto;
 }
 
-/* enlarged micro provinces stay readable */
-.map-host #regions path#北京,
-.map-host #regions path#天津,
-.map-host #regions path#上海,
-.map-host #regions path#香港,
-.map-host #regions path#澳门,
-.map-host #regions path#宁夏,
-.map-host #regions path#海南 {
-  stroke-width: 2.2;
-}
 
 .map-host #regions path:hover {
   filter: brightness(0.97);
+}
+.map-host #曾母暗沙 {
+  fill: none;
+  stroke: var(--stroke);
+  stroke-width: 4;
+  pointer-events: none;
 }
 
 .map-host #regions path[data-level="5"] {
