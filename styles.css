@@ -187,13 +187,15 @@ button,
   pointer-events: auto;
 }
 
-/* small regions: thicker stroke + easier hit */
+/* enlarged micro provinces stay readable */
 .map-host #regions path#北京,
 .map-host #regions path#天津,
 .map-host #regions path#上海,
 .map-host #regions path#香港,
-.map-host #regions path#澳门 {
-  stroke-width: 2.4;
+.map-host #regions path#澳门,
+.map-host #regions path#宁夏,
+.map-host #regions path#海南 {
+  stroke-width: 2.2;
 }
 
 .map-host #regions path:hover {
