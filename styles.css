@@ -10,7 +10,7 @@
   --radius: 14px;
   /*
    * Level palette: sequential cold → warm by connection depth
-   * 路过(冷/疏离) → 出差(功能) → 游玩(愉悦) → 短居(依恋) → 居住(扎根)
+   * 通过(冷/疏离) → 接地(功能) → 访问(愉悦) → 宿泊(依恋) → 住居(扎根)
    */
   --lv-5: #C0394A;
   --lv-4: #D96B42;
@@ -217,8 +217,8 @@ button,
 .picker {
   position: absolute;
   z-index: 6;
-  min-width: 220px;
-  max-width: min(300px, calc(100vw - 24px));
+  min-width: 240px;
+  max-width: min(320px, calc(100vw - 24px));
   padding: 0;
   border-radius: 6px;
   background: #fff;

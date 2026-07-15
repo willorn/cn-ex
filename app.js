@@ -22,12 +22,12 @@ const MAP_BG = '#B4CDEA';
 
 /** Sequential cold→warm by footprint depth (export + legend source of truth). */
 const LEVELS = {
-  5: { label: '居住', color: '#C0394A' },
-  4: { label: '短居', color: '#D96B42' },
-  3: { label: '游玩', color: '#E2B24A' },
-  2: { label: '出差', color: '#5E9E98' },
-  1: { label: '路过', color: '#8FA6C4' },
-  0: { label: '没去过', color: '#F3F5F7' },
+  5: { label: '住居', full: '住居（居住过）', color: '#C0394A' },
+  4: { label: '宿泊', full: '宿泊（住宿过）', color: '#D96B42' },
+  3: { label: '访问', full: '访问（游玩过）', color: '#E2B24A' },
+  2: { label: '接地', full: '接地（休息、换车等）', color: '#5E9E98' },
+  1: { label: '通过', full: '通过（路过）', color: '#8FA6C4' },
+  0: { label: '没去过', full: '没去过', color: '#F3F5F7' },
 };
 
 const MAP_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 976" role="img" aria-label="中国省级制霸地图">
@@ -45,11 +45,11 @@ const MAP_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 976" 
     <path class="legend-swatch" data-level="1" fill="#8FA6C4" d="M983 650h120v50H983Z"/>
     <path class="legend-swatch" data-level="0" fill="#F3F5F7" d="M983 700h120v50H983Z"/>
     <path class="legend-border" fill="none" stroke="#333" stroke-width="4" d="M983 448h120v304H983Z"/>
-    <text x="1000" y="484">居住 5</text>
-    <text x="1000" y="534">短居 4</text>
-    <text x="1000" y="584">游玩 3</text>
-    <text x="1000" y="634">出差 2</text>
-    <text x="1000" y="684">路过 1</text>
+    <text x="1000" y="484">住居 5</text>
+    <text x="1000" y="534">宿泊 4</text>
+    <text x="1000" y="584">访问 3</text>
+    <text x="1000" y="634">接地 2</text>
+    <text x="1000" y="684">通过 1</text>
     <text x="998" y="734">没去过</text>
   </g>
   <text id="credit" x="37" y="937">cn-ex</text>
