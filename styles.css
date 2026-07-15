@@ -1,17 +1,23 @@
 :root {
-  --bg: #9dc3fb;
-  --ink: #1a2433;
-  --muted: #3d4f66;
+  /* page */
+  --bg: #B4CDEA;
+  --bg-deep: #9BB8DB;
+  --ink: #1C2A3A;
+  --muted: #4a5d73;
   --panel: #ffffff;
-  --stroke: #333333;
-  --shadow: 0 10px 30px rgba(26, 36, 51, 0.12);
+  --stroke: #2A3544;
+  --shadow: 0 10px 30px rgba(28, 42, 58, 0.12);
   --radius: 14px;
-  --lv-5: #e84c3d;
-  --lv-4: #d58337;
-  --lv-3: #f3c218;
-  --lv-2: #30cc70;
-  --lv-1: #3598db;
-  --lv-0: #ffffff;
+  /*
+   * Level palette: sequential cold → warm by connection depth
+   * 路过(冷/疏离) → 出差(功能) → 游玩(愉悦) → 短居(依恋) → 居住(扎根)
+   */
+  --lv-5: #C0394A;
+  --lv-4: #D96B42;
+  --lv-3: #E2B24A;
+  --lv-2: #5E9E98;
+  --lv-1: #8FA6C4;
+  --lv-0: #F3F5F7;
   --safe-b: env(safe-area-inset-bottom, 0px);
   --font: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
     sans-serif;
@@ -27,7 +33,7 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--ink);
-  background: linear-gradient(180deg, #b7d4ff 0%, var(--bg) 40%, #8eb8f8 100%);
+  background: linear-gradient(180deg, #c5daf2 0%, var(--bg) 45%, var(--bg-deep) 100%);
 }
 
 body {
@@ -157,7 +163,7 @@ button,
 }
 
 .map-host #regions path {
-  fill: #fff;
+  fill: var(--lv-0);
   stroke: var(--stroke);
   stroke-width: 4;
   stroke-linejoin: round;
@@ -320,12 +326,12 @@ button,
 .picker-item.lv-3:hover,
 .picker-item.lv-3.is-selected {
   background: var(--lv-3);
-  color: #222;
+  color: #2a2410;
 }
 .picker-item.lv-2:hover,
 .picker-item.lv-2.is-selected {
   background: var(--lv-2);
-  color: #08351c;
+  color: #fff;
 }
 .picker-item.lv-1:hover,
 .picker-item.lv-1.is-selected {
@@ -334,7 +340,7 @@ button,
 }
 .picker-item.lv-0:hover,
 .picker-item.lv-0.is-selected {
-  background: #eaeaea;
+  background: #e8ebef;
   color: var(--ink);
 }
 
