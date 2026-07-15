@@ -154,24 +154,46 @@ button,
 
 .map-host #title,
 .map-host #score {
-  font-size: 54px;
+  font-size: 42px;
   font-weight: 700;
+}
+.map-host #legend text {
+  font-size: 20px;
 }
 
 .map-host .fs24 {
   font-size: 24px;
 }
+.map-host .fs22 {
+  font-size: 18px;
+}
+.map-host #labels text {
+  font-size: 16px;
+  font-weight: 600;
+  paint-order: stroke fill;
+  stroke: rgba(255, 255, 255, 0.75);
+  stroke-width: 3px;
+}
 
 .map-host #regions path {
   fill: var(--lv-0);
   stroke: var(--stroke);
-  stroke-width: 4;
+  stroke-width: 1.6;
   stroke-linejoin: round;
   stroke-linecap: round;
   fill-rule: evenodd;
   cursor: pointer;
   transition: fill 0.15s ease, filter 0.15s ease;
   pointer-events: auto;
+}
+
+/* small regions: thicker stroke + easier hit */
+.map-host #regions path#北京,
+.map-host #regions path#天津,
+.map-host #regions path#上海,
+.map-host #regions path#香港,
+.map-host #regions path#澳门 {
+  stroke-width: 2.4;
 }
 
 .map-host #regions path:hover {
@@ -198,16 +220,7 @@ button,
   fill: var(--lv-0);
 }
 
-.map-host #曾母暗沙 {
-  fill: none;
-  stroke: var(--stroke);
-  stroke-width: 4;
-  pointer-events: none;
-}
 
-.map-host #legend text {
-  font-size: 24px;
-}
 
 .map-host #credit {
   font-size: 28px;
