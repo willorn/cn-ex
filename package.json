@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 5178",
-    "start": "python3 -m http.server 5178",
-    "build": "echo \"static site — no build step\""
+    "start": "python3 -m http.server 5178"
   },
   "license": "MIT"
 }

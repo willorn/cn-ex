@@ -84,14 +84,22 @@ cn-ex/
 MIT
 
 
+
 ## 部署
 
-- 生产域名：<https://cn-ex.ziki.top>
-- 平台：Vercel（静态托管，无 build）
-- DNS：Cloudflare `CNAME cn-ex` → Vercel 项目域名页给出的 `*.vercel-dns-*.com`（DNS only / 灰云）
+| 项 | 值 |
+| --- | --- |
+| 生产域名 | https://cn-ex.ziki.top |
+| Vercel 默认域 | https://cn-ex.vercel.app |
+| 项目 | `webcode/cn-ex`（已连 GitHub `willorn/cn-ex`） |
+| 构建 | 无（纯静态） |
 
-本地预览：
+### Cloudflare DNS（`ziki.top` 区）
 
-```bash
-pnpm dev
-```
+| 类型 | 名称 | 目标 | 代理 |
+| --- | --- | --- | --- |
+| CNAME | `cn-ex` | `e018226a24a58d04.vercel-dns-017.com` | **仅 DNS（灰云）** |
+
+与博客一致：不要开橙云代理到 Vercel，否则证书/回源容易踩坑。
+
+`main` 推送后 Vercel 会自动部署。

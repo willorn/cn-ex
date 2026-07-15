@@ -1,0 +1,8 @@
+node_modules
+.git
+.vercel
+src
+*.log
+README.md
+package.json
+.gitignore
