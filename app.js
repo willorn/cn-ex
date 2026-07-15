@@ -222,20 +222,26 @@ function showPicker(provinceEl, clientX, clientY) {
 
   picker.hidden = false;
   picker.classList.remove('is-open');
-  // measure off-screen first
-  picker.style.left = '-9999px';
-  picker.style.top = '0px';
 
-  const stage = picker.parentElement.getBoundingClientRect();
-  const pr = picker.getBoundingClientRect();
-  let left = clientX - stage.left - pr.width / 2;
-  let top = clientY - stage.top - pr.height / 2;
-  left = Math.max(8, Math.min(left, stage.width - pr.width - 8));
-  top = Math.max(8, Math.min(top, stage.height - pr.height - 8));
-  picker.style.left = `${left}px`;
-  picker.style.top = `${top}px`;
+  const mobileSheet = window.matchMedia('(max-width: 720px)').matches;
+  if (mobileSheet) {
+    // CSS pins picker as bottom sheet; clear inline coords
+    picker.style.left = '';
+    picker.style.top = '';
+  } else {
+    // measure off-screen first
+    picker.style.left = '-9999px';
+    picker.style.top = '0px';
+    const stage = picker.parentElement.getBoundingClientRect();
+    const pr = picker.getBoundingClientRect();
+    let left = clientX - stage.left - pr.width / 2;
+    let top = clientY - stage.top - pr.height / 2;
+    left = Math.max(8, Math.min(left, stage.width - pr.width - 8));
+    top = Math.max(8, Math.min(top, stage.height - pr.height - 8));
+    picker.style.left = `${left}px`;
+    picker.style.top = `${top}px`;
+  }
 
-  // next frame fade-in like JapanEx
   requestAnimationFrame(() => picker.classList.add('is-open'));
 }
 
