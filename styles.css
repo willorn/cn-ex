@@ -277,13 +277,6 @@ button,
   fill: var(--lv-0);
 }
 
-.map-host #曾母暗沙 {
-  fill: none;
-  stroke: var(--map-stroke);
-  stroke-width: 2.5;
-  pointer-events: none;
-  opacity: 0.5;
-}
 
 /* —— picker —— */
 .picker {
