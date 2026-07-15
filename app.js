@@ -22,11 +22,11 @@ const MAP_BG = '#B4CDEA';
 
 /** Sequential cold→warm by footprint depth (export + legend source of truth). */
 const LEVELS = {
-  5: { label: '居住', full: '居住（住过年以上）', color: '#C0394A' },
-  4: { label: '短居', full: '短居（住过月以上）', color: '#D96B42' },
-  3: { label: '游玩', full: '游玩（旅行过）', color: '#E2B24A' },
-  2: { label: '出差', full: '出差（去过但几乎没玩）', color: '#5E9E98' },
-  1: { label: '路过', full: '路过（路过或经停）', color: '#8FA6C4' },
+  5: { label: '居住', full: '居住（居住过）', color: '#C0394A' },
+  4: { label: '短居', full: '短居（住宿过）', color: '#D96B42' },
+  3: { label: '游玩', full: '游玩（游玩过）', color: '#E2B24A' },
+  2: { label: '落脚', full: '落脚（休息、换车等）', color: '#5E9E98' },
+  1: { label: '路过', full: '路过（路过）', color: '#8FA6C4' },
   0: { label: '没去过', full: '没去过', color: '#F3F5F7' },
 };
 
@@ -48,7 +48,7 @@ const MAP_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1134 976" 
     <text x="1000" y="484">居住 5</text>
     <text x="1000" y="534">短居 4</text>
     <text x="1000" y="584">游玩 3</text>
-    <text x="1000" y="634">出差 2</text>
+    <text x="1000" y="634">落脚 2</text>
     <text x="1000" y="684">路过 1</text>
     <text x="998" y="734">没去过</text>
   </g>
