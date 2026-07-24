@@ -23,11 +23,11 @@
   --safe-l: env(safe-area-inset-left, 0px);
   --safe-r: env(safe-area-inset-right, 0px);
 
-  --lv-5: #b85c5c;
-  --lv-4: #c8885a;
-  --lv-3: #c9a85c;
-  --lv-2: #6a9a92;
-  --lv-1: #8a9eb5;
+  --lv-5: #b06bc1;
+  --lv-4: #df8d32;
+  --lv-3: #e7c94b;
+  --lv-2: #3b8cc4;
+  --lv-1: #69c2e3;
   --lv-0: #f7f5f0;
 
   --map-bg: #f0ebe3;
@@ -236,7 +236,7 @@ button,
 
 .map-host #legend text {
   font-size: 22px;
-  fill: var(--body);
+  fill: var(--ink);
   font-weight: 500;
 }
 
@@ -385,27 +385,27 @@ button,
 .picker-item.lv-5:hover,
 .picker-item.lv-5.is-selected {
   background: color-mix(in srgb, var(--lv-5) 20%, var(--paper-soft));
-  color: #6b2c2c;
+  color: var(--ink);
 }
 .picker-item.lv-4:hover,
 .picker-item.lv-4.is-selected {
   background: color-mix(in srgb, var(--lv-4) 22%, var(--paper-soft));
-  color: #6b3d1f;
+  color: var(--ink);
 }
 .picker-item.lv-3:hover,
 .picker-item.lv-3.is-selected {
   background: color-mix(in srgb, var(--lv-3) 26%, var(--paper-soft));
-  color: #5c4a1a;
+  color: var(--ink);
 }
 .picker-item.lv-2:hover,
 .picker-item.lv-2.is-selected {
   background: color-mix(in srgb, var(--lv-2) 22%, var(--paper-soft));
-  color: #1f4a44;
+  color: var(--ink);
 }
 .picker-item.lv-1:hover,
 .picker-item.lv-1.is-selected {
   background: color-mix(in srgb, var(--lv-1) 24%, var(--paper-soft));
-  color: #2a3d52;
+  color: var(--ink);
 }
 
 /* —— footer —— */
