@@ -23,11 +23,11 @@
   --safe-l: env(safe-area-inset-left, 0px);
   --safe-r: env(safe-area-inset-right, 0px);
 
-  --lv-5: #b06bc1;
+  --lv-5: #c04d9e;
   --lv-4: #df8d32;
   --lv-3: #e7c94b;
   --lv-2: #3b8cc4;
-  --lv-1: #69c2e3;
+  --lv-1: #4ecdc4;
   --lv-0: #f7f5f0;
 
   --map-bg: #f0ebe3;

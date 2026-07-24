@@ -5,11 +5,11 @@
   <g id="labels"><text x="659" y="266">内蒙古</text><text x="951" y="123">黑龙江</text><text x="966" y="242">吉林</text><text x="906" y="347">辽宁</text><text x="773" y="371">北京</text><text x="773" y="419">天津</text><text x="751" y="469">河北</text><text x="861" y="488">山</text><text x="861" y="518">东</text><text x="685" y="579">河南</text><text x="684" y="658">湖北</text><text x="684" y="733">湖</text><text x="684" y="763">南</text><text x="846" y="575">江</text><text x="846" y="605">苏</text><text x="888" y="635">上海</text><text x="872" y="685">浙</text><text x="872" y="715">江</text><text x="844" y="783">福</text><text x="844" y="813">建</text><text x="925" y="826">台</text><text x="925" y="856">湾</text><text x="625" y="930">海南</text><text x="721" y="842">广东</text><text x="772" y="736">江</text><text x="772" y="766">西</text><text x="793" y="603">安</text><text x="793" y="633">徽</text><text x="674" y="466">山</text><text x="674" y="496">西</text><text x="604" y="536">陕</text><text x="604" y="566">西</text><text x="527" y="460">宁</text><text x="527" y="490">夏</text><text x="411" y="304">甘</text><text x="411" y="334">肃</text><text x="301" y="520">青海</text><text x="453" y="660">四川</text><text x="432" y="805">云南</text><text x="579" y="839">广西</text><text x="566" y="759">贵州</text><text x="579" y="691">重庆</text><text x="104" y="639">西藏</text><text x="163" y="288">新疆</text><text x="767" y="880" class=fs24>港</text><text x="711" y="880" class=fs24>澳</text></g>
   <text id="score" x="35" y="883">分数: 0</text>
   <g id="legend">
-    <path class="legend-swatch" data-level="5" fill="#b06bc1" d="M983 450h120v50H983Z"/>
+    <path class="legend-swatch" data-level="5" fill="#c04d9e" d="M983 450h120v50H983Z"/>
     <path class="legend-swatch" data-level="4" fill="#df8d32" d="M983 500h120v50H983Z"/>
     <path class="legend-swatch" data-level="3" fill="#e7c94b" d="M983 550h120v50H983Z"/>
     <path class="legend-swatch" data-level="2" fill="#3b8cc4" d="M983 600h120v50H983Z"/>
-    <path class="legend-swatch" data-level="1" fill="#69c2e3" d="M983 650h120v50H983Z"/>
+    <path class="legend-swatch" data-level="1" fill="#4ecdc4" d="M983 650h120v50H983Z"/>
     <path class="legend-swatch" data-level="0" fill="#f7f5f0" d="M983 700h120v50H983Z"/>
     <path class="legend-border" fill="none" stroke="#2c2a26" stroke-width="4" d="M983 448h120v304H983Z"/>
     <text x="1000" y="484">居住 5</text>
